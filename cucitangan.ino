@@ -36,12 +36,12 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
   
-  if (distance < 55) { 
-    digitalWrite(RELAY_PIN, LOW);  
+  if (distance < 32) { 
+    digitalWrite(RELAY_PIN, HIGH);  
     Serial.println("Relay ON");
     delay(1000);
   } else {
-  digitalWrite(RELAY_PIN, HIGH); 
+  digitalWrite(RELAY_PIN, LOW); 
   Serial.println("Relay OFF");
   delay(1000);
   }
